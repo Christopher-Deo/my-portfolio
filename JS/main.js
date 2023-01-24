@@ -1,19 +1,19 @@
-// sets up the callback function to run on page load
 $(document).ready(function () {
+
     $('#slides').superslides({
         animation: 'fade',
         play: 5000,
-        pagination: false,
+        pagination: false
     });
-    //adding in the Typed.js library for the hero section
-    const typed = new Typed(".typed", {
-        strings: ["Front End Developer", "Web Developer", "Software Engineer"],
+
+    var typed = new Typed(".typed", {
+        strings: ["Front End Developer.", "Web Developer.", "Software Engineer."],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
-        showCursor: false,
-    })
-    //adding the owl carousel for skills section
+        showCursor: false
+    });
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         items: 4,
@@ -27,31 +27,22 @@ $(document).ready(function () {
             768: {
                 items: 3
             },
-          928: {
+            938: {
                 items: 4
             }
         }
     });
-    //adding easy pie charts plugin
-    $('.chart').easyPieChart({
-        easing: 'easeInOut',
-        barColor: '#fff',
-        trackColor: false,
-        lineCap: 'butt',
-        scaleColor: false,
-        lineWidth: 4,
-        size: 152,
-        onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
-    });
 
-    //setting pie chart animation to start when in view
-    let skillsTopOffset = $(".skillsSection").offset().top;
 
+
+
+
+    var skillsTopOffset = $(".skillsSection").offset().top;
+    var statsTopOffset = $(".statsSection").offset().top;
+    var countUpFinished = false;
     $(window).scroll(function () {
 
-        if (window.pageYOffset > skillsTopOffset - $(window).height() + 400) {
+        if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
 
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
@@ -69,7 +60,24 @@ $(document).ready(function () {
         }
 
 
+        if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+            $(".counter").each(function () {
+                var element = $(this);
+                var endVal = parseInt(element.text());
+
+                element.countup(endVal);
+            });
+
+            countUpFinished = true;
+
+        }
+
+
     });
 
 
+
+
 });
+
+
