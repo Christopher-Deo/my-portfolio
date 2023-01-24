@@ -11,7 +11,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- SuperSlides Plugin -->
     <link rel="stylesheet" href="./CSS/superslides.css">
+    <!-- Owl Carousel Plugin -->
+    <link rel="stylesheet" href="./Css/owl.carousel.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -98,34 +101,265 @@
 
     <!-- ================== skills section =======================  -->
     <section id="skills" class="skillsSection section">
-    
+
         <div class="container">
-    
+
             <div class="row">
-    
+
                 <div class="col-md-12 text-center">
                     <h2>TECHNICAL SKILLS</h2>
                     <p>A representation of my proficiency in each skill</p>
                 </div>
-    
-    
-    
+
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="skill">
+                        <span class="chart" data-percent="90">
+                            <span class="percent">90/span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>HTML</h4>
+                            <p>Semantic HTML</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="80">
+                            <span class="percent">80</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>CSS</h4>
+                        <p>Saas, Less,</p>
+                        <p>Tailwind</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="75">
+                            <span class="percent">75</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>JavaScript</h4>
+                        <p>ES6+</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+                            <span class="percent">70</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>React</h4>
+                        <p>v18.2.0</p>
+                    </div>
+                </div>
             </div>
-    
-        </div>
-    
+            <!-- second row in skills carousel -->
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="skill">
+                            <span class="chart" data-percent="70">
+                                <span class="percent">70</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>jQuery</h4>
+                            <p>v3.6.3</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="90">
+                                <span class="percent">90</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>UI Libraries</h4>
+                            <p>Bootstrap, Material UI,</p>
+                            <p>Amplify UI</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="50">
+                                <span class="percent">50</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>AWS</h4>
+                            <p>Amplify, DynamoDB,</p>
+                            <p>Serverless Backend</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="87">
+                                <span class="percent">87</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>Node.js</h4>
+                            <p>v18.13.0</p>
+                        </div>
+                    </div>
+                </div>
     </section>
 
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="statsSection section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>STATS</h2>
+                <p>Some of my stats</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="stats">
+            <img class="statsImage" src="./images/coffee.png" alt="coffee cup">
+                    <h3>Cups of Coffee</h3>
+                    <p>10,000+</p>
+                </div>
+            </div>
 
-    <!-- jQuery, JavaScript, and Ajax tags -->
+            <div class="col-md-3  col-sm-6 text-center">
+                <div class="stats">
+                    <img class="statsImage" src="./images/projects.png" alt="projects">
+                    <h3>Projects</h3>
+                    <p>42</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6  text-center">
+                <div class="stats">
+                    <img class="statsImage" src="./images/bugs.png" alt="software bugs icon">
+                    <h3>Bugs Found</h3>
+                    <p>1000+</p>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="stats">
+                    <img class="statsImage" src="./images/award.png" alt="website awards">
+                    <h3>Awards</h3>
+                    <p>1</p>
+                </div>
+            </div>
+        </div> -->
+    <div id="stats" class="statsSection section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>STATS</h2>
+                    <p>Some of my stats</p>
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <img class="statsImage" src="./images/coffee.png" alt="coffee cup">
+                            </div>
+
+                            <div class="squareContent">
+                                <h2>10,000</h2>
+                                <h3>Cups of Coffee</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <img class="statsImage" src="./images/projects.png"" alt=" projects icon">
+                            </div>
+
+                            <div class="squareContent">
+                                <h2>42</h2>
+                                <h3>Projects</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <img class="statsImage" src="./images/bugs.png" alt="software bugs">
+                            </div>
+
+                            <div class="squareContent">
+                                <h2>1000</h2>
+                                <h3>Bugs Found & Fixed</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <img class="statsImage" src="./images/award.png" alt="website awards">
+                            </div>
+
+                            <div class="squareContent">
+                                <h2>1</h2>
+                                <h3>Award Winning Website</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- jQuery, JavaScript, and Additional Dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./JS/jquery.superslides.min.js"></script>
     <script src="./JS/typed.min.js"></script>
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script src="./JS/jquery.easypiechart.min.js"></script>
     <script src="./JS/main.js"></script>
 </body>
 
