@@ -21,7 +21,7 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fancy Box -->
-    <link rel="stylesheet" href="./CSS/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="./CSS/jquery.fancybox.min.css" />
 </head>
 
 <body>
@@ -41,14 +41,49 @@
                     <p class="sub typed"></p>
                 </div>
             </div>
-
+            <!-- ========== slider navigation =========== -->
             <nav class="slides-navigation">
                 <a href="#" class="next"></a>
                 <a href="#" class="prev"></a>
             </nav>
         </div>
-    </section>
+            </section>
 
+            <!-- ============ Bootstrap Navbar ==================== -->
+            <nav id="navigation" class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./images/white-logo.png" alt="logo for christopherdeo.com">
+                </a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <!-- <img id="menuIcon" src="./images/menu-icon.png" alt="icon for main menu"> -->
+
+                    </span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#stats">Stats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </nav>
     <!-- ================ About Section ============-->
     <section id="about" class="section">
 
@@ -340,12 +375,12 @@
                 </div>
                 <div class="itemsContainer">
                     <ul class="items">
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="images/portfolio/thumbnails/dog-square.jpeg">
                                 <div class="icons">
                                     <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                    data-fancybox data-caption="Ozzie when he was">
+                                        data-fancybox data-caption="Ozzie when he was">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
@@ -357,12 +392,12 @@
                             </div>
                         </li>
 
-                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="images/portfolio/thumbnails/dog-square.jpeg">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox
-                                        data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
+                                        data-fancybox data-caption="Ozzie when he was">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
@@ -373,46 +408,31 @@
                                 <div class="imageOverlay"></div>
                             </div>
                         </li>
-                        
-                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="images/portfolio/thumbnails/dog-square.jpeg">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox
-                                        data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
+                                        data-fancybox data-caption="Ozzie when he was">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
                                     <a href="" target="_blank" class="projectLink" title="Link to Project">
                                         <i class="fa fa-link"></i>
                                     </a>
-                                    
+
                                 </div>
                                 <div class="imageOverlay"></div>
                             </div>
                         </li>
-                        
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="images/portfolio/thumbnails/dog-square.jpeg">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox
-                                        data-caption="Ozzie when he was">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li><li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
-                                <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox
-                                        data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
+                                        data-fancybox data-caption="Ozzie when he was">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
@@ -423,13 +443,30 @@
                                 <div class="imageOverlay"></div>
                             </div>
                         </li>
-                        
-                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="images/portfolio/thumbnails/dog-square.jpeg">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox
-                                        data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
+                                        data-fancybox data-caption="Ozzie when he was">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- insert link to project in href below -->
+                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
+                                <div class="icons">
+                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
+                                        data-fancybox data-caption="Ozzie when he was">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
@@ -447,8 +484,16 @@
         </div>
     </section>
 
+    <!-- ======================== copyrights section ================== -->
+    <section class="copyrightSection">
+
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Christopher Deo 2022</p>
+        </div>
+
+    </section>
     <!-- jQuery, JavaScript, and Additional Dependencies -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
@@ -460,6 +505,9 @@
     <script src="js/countUp-jquery.js"></script>
     <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
     <script src="./JS/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>
 </body>
 

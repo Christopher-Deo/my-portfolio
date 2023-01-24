@@ -330,3 +330,49 @@ body {
 .items {
     padding: 0;
 }
+
+.copyrightSection {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    margin: 0;
+}
+
+#logo{
+    height: 3em;
+    width: auto
+}
+
+#navigation {
+    background-color: #e74c3c;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background: url(../images/menu-icon.png);
+        background-size: 100%;
+        }
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
+
