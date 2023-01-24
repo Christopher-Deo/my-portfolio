@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
-    color: #333;
-    background-color: #fff;
+    color: #161925;
+    background-color: #235789;
     letter-spacing: 1px;
 }
 
@@ -51,6 +51,7 @@ body {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
+    text-shadow: 2px 2px #161925;
 }
 
 .titleMessage .heading .name {
@@ -68,8 +69,8 @@ body {
 .aboutImage {
     max-width: 100%;
     border-radius: 10px;
-    border: 2px solid red;
-    box-shadow: 5px 5px 5px;
+    border: 2px solid #C1292E;
+    box-shadow: 5px 5px 5px #161925;
 }
 
 .aboutTitle {
@@ -78,7 +79,7 @@ body {
 
 .skillsSection,
 .contactSection {
-    background-color: #e74c3c;
+    background-color: #C1292E;
     color: #fff;
 }
 
@@ -106,7 +107,7 @@ body {
 }
 
 .chart .percent {
-    color: #000;
+    color: #161925;
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
@@ -130,7 +131,7 @@ body {
     position: relative;
     padding: 50px 15px 35px;
     text-align: center;
-    border: 2px solid #444;
+    border: 2px solid #F1D302;
     border-top: none;
 }
 
@@ -140,7 +141,7 @@ body {
     position: absolute;
     top: 0px;
     width: 30%;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #F1D302;
 }
 
 
@@ -341,13 +342,16 @@ body {
     margin: 0;
 }
 
-#logo{
+#logo {
     height: 3em;
     width: auto
 }
 
 #navigation {
-    background-color: #e74c3c;
+    background-color: #235789;
+    border-bottom: 2px solid #C1292E;
+    border-top: 2px solid #C1292E;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
     padding: 20px 10px;
     z-index: 100;
     width: 100%;
@@ -368,11 +372,62 @@ body {
 
 .navbar-toggler-icon {
     background: url(../images/menu-icon.png);
-        background-size: 100%;
-        }
+    background-size: 100%;
+}
 
 .fixedNav #navigation {
     position: fixed;
     top: 0;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    background: url(../images/Settings.gif) center center no-repeat;
+}
+
+#about {
+    background-color: #235789;
+    
+}
+
+.aboutContainer {
+    border: 2px solid #C1292E;
+    border-radius: 1rem;
+    background-color: #FDFFFC;
+    box-shadow: 5px 5px 5px #161925;
+    
+
+}
+
+.statsSection{
+    background-color: #F1D302;
+}
+.statsContainer{
+    border: 2px solid #C1292E;
+    border-radius: 1rem;
+    padding:4rem;
+    box-shadow: 5px 5px 5px #161925;
+    background-color: #FDFFFC;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+}
+
+.socialIcons{
+    height: 2rem;
 }
 

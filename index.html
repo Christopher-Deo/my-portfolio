@@ -25,9 +25,14 @@
 </head>
 
 <body>
+    <!--  page loader animation -->
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
 
+    <!-- =============== hero slides section ===============-->
     <section id="slides">
-        <div class="overlay">
+        <div class="overlay wave">
             <div class="slides-container">
                 <img src="./images/DeoHeadshot.jpg" alt="Photo of Christopher Deo">
                 <img src="./images/slider-2.jpg" alt="image of computer workstation">
@@ -47,98 +52,105 @@
                 <a href="#" class="prev"></a>
             </nav>
         </div>
-            </section>
+    </section>
 
-            <!-- ============ Bootstrap Navbar ==================== -->
-            <nav id="navigation" class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img id="logo" src="./images/white-logo.png" alt="logo for christopherdeo.com">
-                </a>
-            
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <!-- <img id="menuIcon" src="./images/menu-icon.png" alt="icon for main menu"> -->
+    <!-- ============ Bootstrap Navbar ==================== -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="./images/white-logo.png" alt="logo for christopherdeo.com">
+        </a>
 
-                    </span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#stats">Stats</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
-            
-            </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <!-- <img id="menuIcon" src="./images/menu-icon.png" alt="icon for main menu"> -->
+
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
     <!-- ================ About Section ============-->
-    <section id="about" class="section">
+    <section id="about" class="section sectionContainer">
+        <div class="wave-container">
+            <div class="container aboutContainer">
 
-        <div class="container">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-md-5 mt-5">
+                        <img class="aboutImage mt-5" src="./images/about-image2.jpg">
+                    </div>
 
-                <div class="col-md-5 mt-5">
-                    <img class="aboutImage mt-5" src="./images/about-image2.jpg">
-                </div>
+                    <div class="col-md-7 mt-2">
+                        <h4 class="aboutTitle mt-2 display-4">Meet your developer!</h4>
 
-                <div class="col-md-7 mt-2">
-                    <h4 class="aboutTitle mt-2 display-4">Meet your developer!</h4>
+                        <p>Hi, my name is Christopher Deo, and I’m a passionate front-end developer with a keen eye for
+                            detail and design. I love
+                            crafting intuitive and visually pleasing websites and applications, and I strive to create
+                            experiences that both delight
+                            and engage users.</p>
 
-                    <p>Hi, my name is Christopher Deo, and I’m a passionate front-end developer with a keen eye for
-                        detail and design. I love
-                        crafting intuitive and visually pleasing websites and applications, and I strive to create
-                        experiences that both delight
-                        and engage users.</p>
+                        <p>I have an extensive background in creative web design and development, with experience in
+                            creating
+                            custom web pages using HTML, CSS, and JavaScript. Over the years, I have become well-versed
+                            in
+                            the use of popular
+                            front-end frameworks such as React and CMS platforms, including WordPress. I'm always eager
+                            to
+                            stay up-to-date with new technologies and best practices</p>
 
-                    <p>I have an extensive background in creative web design and development, with experience in
-                        creating
-                        custom web pages using HTML, CSS, and JavaScript. Over the years, I have become well-versed in
-                        the use of popular
-                        front-end frameworks such as React and CMS platforms, including WordPress. I'm always eager to
-                        stay up-to-date with new technologies and best practices</p>
+                        <p>My passion lies in creating beautiful, user-friendly websites and applications. I'm
+                            constantly
+                            striving to build functional, visually appealing, and responsive projects. I'm also
+                            comfortable
+                            working with popular content management systems like WordPress,
+                            so that clients can easily manage their own sites if desired.
+                        </p>
 
-                    <p>My passion lies in creating beautiful, user-friendly websites and applications. I'm constantly
-                        striving to build functional, visually appealing, and responsive projects. I'm also comfortable
-                        working with popular content management systems like WordPress,
-                        so that clients can easily manage their own sites if desired.
-                    </p>
+                        <p>When I'm taking a break from coding, I enjoy spending time with my family. Sometimes, you'll
+                            find
+                            me in the garage or my shop, tinkering with my cars or my latest woodworking project.
+                            When I'm not wrenching or getting a little sawdust therapy in, you'll find me in the great
+                            outdoors. I love to hike, camp, and fish, and nearly everything else lake and mountain
+                            related.
+                            I'm always looking for the unbeaten path and new adventures to explore!</p>
+                        <p>If you're looking for a creative front-end developer to help build the perfect
+                            website or application, then I'm your go-to person. I'm looking forward to partnering with
+                            you
+                            to create something
+                            amazing!</p>
 
-                    <p>When I'm taking a break from coding, I enjoy spending time with my family. Sometimes, you'll find
-                        me in the garage or my shop, tinkering with my cars or my latest woodworking project.
-                        When I'm not wrenching or getting a little sawdust therapy in, you'll find me in the great
-                        outdoors. I love to hike, camp, and fish, and nearly everything else lake and mountain related.
-                        I'm always looking for the unbeaten path and new adventures to explore!</p>
-                    <p>If you're looking for a creative front-end developer to help build the perfect
-                        website or application, then I'm your go-to person. I'm looking forward to partnering with you
-                        to create something
-                        amazing!</p>
+                    </div>
 
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
     <!-- ================== skills section =======================  -->
-    <section id="skills" class="skillsSection section">
+    <section id="skills" class="skillsSection section ">
 
-        <div class="container">
+        <div class="container skillsContainer">
 
             <div class="row">
 
@@ -238,9 +250,9 @@
 
     <!--=============== Stats Section ================-->
 
-    <div id="stats" class="statsSection section">
+    <div id="stats" class="statsSection section ">
 
-        <div class="container">
+        <div class="container  statsContainer">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>STATS</h2>
@@ -343,20 +355,42 @@
 
     <!-- ================ Contact Section =======================-->
 
-    <div id="contact" class="contactSection section">
+    <section id="contact" class="contactSection section">
 
         <div class="col-md-12 text-center">
-
             <p class="subHeading">Like what you see?</p>
             <h2>I'd love to hear from you!</h2>
             <a href="mailTo:chris@christopherdeo.com" class="contactButton">GET IN TOUCH!</a>
+        </div>
+        <div>
+        
+            <h2 class="mt-5 text-center">Feeling Social?</h2>
+        <p class="subHeading text-center mt-1">Let's make a connection!</p>
+            <div class="socials col-10-sm mt-5">
+                
+                <a href="https://github.com/christopher-deo" target="blank">
+                <img class="socialIcons" src="./images/social icons/github-icon.png" alt="github icon">
+                </a>
 
+                <a href="https://www.linkedin.com/in/christopherdeo/" target="blank">
+                    <img class="socialIcons" src="./images/social icons/linkedin-icon.png" alt="github icon">
+                </a>
+
+                <a href="https://twitter.com/webdevdeo" target="blank">
+                    <img class="socialIcons" src="./images/social icons/twitter-icon.png" alt="github icon">
+                </a>
+
+                <a href="https://www.facebook.com/christopher.deo.58/" target="blank">
+                    <img class="socialIcons" src="./images/social icons/FB-icon.png" alt="github icon">
+                </a>
+
+            </div>
         </div>
 
-    </div>
+    </section>
 
     <!--=================== Portfolio Section  ===============-->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section ">
 
         <div class="container">
 
@@ -369,7 +403,7 @@
                     <ul id="filters">
                         <li><a href="#" data-filter="*" class="current">ALL</a></li>
                         <li><a href="#" data-filter=".apps">Apps</a></li>
-                        <li><a href="#" data-filter=".me">Me</a></li>
+                        <li><a href="#" data-filter=".current">Current Projects</a></li>
                         <li><a href="#" data-filter=".websites">Websites</a></li>
                     </ul>
                 </div>
@@ -377,14 +411,14 @@
                     <ul class="items">
                         <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
+                                <img src="images/portfolio/glitchfix-logo-resized.png">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/glitchfix-app.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="GlitchFix, an issue tracking app built in React. Features CRUD, RESTful API. Hosted through AWS Amplify">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                    <a href="https://glitchfix.christopherdeo.com" target="_blank" class="projectLink" title="Link to Project">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -392,16 +426,16 @@
                             </div>
                         </li>
 
-                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="current apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
+                                <img src="images/portfolio/thumbnails/cashable-thumb.png">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/cashable.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="Budget tracking app built with React and AWS Amplify. Features User Authentication and DynamoDB Storage">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                    <a href="https://github.com/Christopher-Deo/cashable" target="_blank" class="projectLink" title="Link to Project">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -411,87 +445,34 @@
 
                         <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
+                                <img src="./images/portfolio/thumbnails/portfolio-thumb.png" alt="thumbnail image of christopherdeo.com">
                                 <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
+                                    <a href="./images/portfolio/Portfolio-site.png" title="View image" class="openButton"
+                                        data-fancybox data-caption="My Personal Portfolio">
                                         <i class="fa fa-search"></i>
                                     </a>
                                     <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                    <a href="https://christopherdeo.com/" target="_blank" class="projectLink" title="Link to Project">
                                         <i class="fa fa-link"></i>
                                     </a>
 
                                 </div>
                                 <div class="imageOverlay"></div>
                             </div>
-                        </li>
-
-                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
-                                <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
-                                <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/thumbnails/dog-square.jpeg">
-                                <div class="icons">
-                                    <a href="./images/portfolio/dog.jpeg" title="View image" class="openButton"
-                                        data-fancybox data-caption="Ozzie when he was">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <!-- insert link to project in href below -->
-                                    <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-
-                    </ul>
+                        </li>                                                                              </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ======================== copyrights section ================== -->
-    <section class="copyrightSection">
+    <footer class="copyrightSection section">
 
         <div class="col-md-12 text-center">
             <p>&copy; Copyright Christopher Deo 2022</p>
         </div>
 
-    </section>
+    </footer>
     <!-- jQuery, JavaScript, and Additional Dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
